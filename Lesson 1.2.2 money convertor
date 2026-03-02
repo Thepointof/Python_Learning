@@ -1,0 +1,4 @@
+rub = float(input("Сколько у вас рублей?"))
+cours = float(input("Какой курс доллара сегодня?"))
+math = rub / cours
+print(f"За {rub} рублей, вы получите {math:.2f} долларов сегодня.")
