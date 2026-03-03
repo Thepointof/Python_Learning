@@ -1,0 +1,10 @@
+number = float(input("Введите любое число, а я вам покажу все числа от 1 до вашего числа"))
+total += 1
+for total in range (number):
+    if range > number:
+        break
+while total < number:
+    if number % 2 == 0
+        if total == number:
+                break
+ptint(value, end="number")
