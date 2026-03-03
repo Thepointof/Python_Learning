@@ -1,0 +1,5 @@
+number = int(input("Введите число, а я покажу вам все числа от вашего до еденицы"))
+counter = number
+while counter >= 1:
+    print(counter, end=" ")
+    counter -= 1
