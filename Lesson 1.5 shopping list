@@ -1,0 +1,8 @@
+shopping_list = []
+for i in range(3):
+    goods = input(f"Введи товар, который хочешь включить в список покупок, всего 3.")
+    if goods in shopping_list:
+        print("Уже в списке!")
+    else:
+        shopping_list.append(goods)
+print(f"Тебе нужно купить: {", ".join(shopping_list)}")
