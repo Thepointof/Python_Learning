@@ -1,0 +1,17 @@
+text = input("Напишите предложение, а я подсчитаю слова и покажу сколько и каких слов в нем было")
+raw_words = text.split()
+words_list = []
+for word in raw_words:
+    clean_word = word.strip(".,!?;:-")
+    if clean_word:
+        words_list.append(clean_word)
+splitter = {}
+for word in words_list:
+    if word in splitter: 
+        splitter[word] +=1 
+    else: splitter[word] = 1
+print("\nСтатистика слов:")
+for word, count in splitter.items():
+        print(f"{word:} {count:}")
+unique_words = set(words_list)
+print(f"\nУникальные слова:{unique_words}")
