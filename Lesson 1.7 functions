@@ -1,0 +1,12 @@
+def avarage_score(students):
+    return sum(students.values()) / len(students)
+students ={}
+for i in range(3):
+    name = input("Ваше имя? ")
+    grade = int(input("Ваша оценка? "))
+    students[name] = grade
+print("Студенты:")
+for name, grade in students.items():
+    print(f"{name} {grade}")
+avr = avarage_score(students)
+print("Средний балл:", avr)
